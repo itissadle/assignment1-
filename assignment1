@@ -1,0 +1,37 @@
+class fractions:
+    def __init__(self, s1, m1, s2, m2):
+        self.s1 = s1
+        self.m1 = m1
+        self.s2 = s2
+        self.m2 = m2
+    def sum(self):  
+        result_s = (s1 * m2) + (s2 * m1)
+        result_m = m1 * m2
+    def mul(self, f1, f2):
+        result_s = self.s * f.s
+        result_m = self.m * f.m 
+        result = fractions(result_s, result_m) 
+    def sub(self):   
+        result_s = self.s - f.s
+        result_m = self.m - f.m
+        result = fractions(result_s, result_m)
+    def div(self):  
+        result_s = self.s * f.m
+        result_m = self.m * f.s
+        result = fractions(result_s,  result_m)
+    def show(self):
+        print(self.s, "/", self.m)
+    
+       f1 = fraction(2,3)
+       f1.show()
+       f2 = fractions(4,5)
+       f2.show()
+       franction_to_number(s,m)
+        print(s, m)
+       if m == 0:
+         print("error")
+       else:
+         result = s / m
+         print(result) 
+         return result
+

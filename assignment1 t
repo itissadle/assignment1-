@@ -1,0 +1,73 @@
+class time:
+   def __init__(self, h, m, s):
+     self.h = h
+     self.m = m
+     self.s = s
+   def sum(self, t):
+       h = self.h + t.h
+       m = self.m + t.m
+       s = self.s + t.s
+       if s >= 60:
+         s -= 60
+         m += 1
+       if m >= 60
+         h += 1
+      result = time(h, m, s)
+      return result
+   def sub(self, t):
+        h = self.h - t.h
+        m = self.m - t.m
+        s = self.s - t.s
+       if s < 0:
+           s += 60
+           m -= 1
+       if m < 0:
+           m += 60
+           h -= 1
+       result = time(h, m, s)   
+       return result
+   def second(self, s):
+      m = 0
+      while s:
+         if s <= 60:
+              break
+         s -= 60
+         m += 1
+      h = 0
+      while m:
+         if m <= 60:
+              break
+         m -= 60   
+         h += 1
+      self.s = s
+      self.m = m
+      self.h = h
+      return time(h, m, s)
+   def time_second(self, h, m, s) :
+      self.s = h*3600+ m*60+s
+      self.h = 00
+      self.m = 00
+      return self.s
+   def GMT(self, h, m, s)  
+       s = s
+       m = m+30
+       h = h+3
+       if s >= 60
+           s -= 60
+           m += 1
+      if m >= 60:
+           m -= 60
+           h += 1
+      self.s = s
+      self.m = m
+      self.h = h
+      return time (h, m, s)    
+   def show(self):
+       print(f"{self.h}:{self.m}:{self.s}") 
+               
+         
+
+
+
+
+
